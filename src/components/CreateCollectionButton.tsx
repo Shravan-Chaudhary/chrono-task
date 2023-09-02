@@ -2,11 +2,18 @@
 
 import { useState } from 'react'
 import { Button } from './ui/button'
+import CreateCollectionSheet from './CreateCollectionSheet'
 
 const CreateCollectionButton = () => {
+  const [open, setOpen] = useState(false)
+  const handleOpenChange = (open: boolean) => {
+    setOpen(open)
+  }
+
   return (
     <div className='w-full rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[1px]'>
       <Button
+        onClick={() => setOpen(true)}
         variant={'outline'}
         className='dark:text-white w-full dark:bg-neutral-950 bg-white'
       >
@@ -14,6 +21,7 @@ const CreateCollectionButton = () => {
           Create Collection
         </span>
       </Button>
+      <CreateCollectionSheet open={open} onOpenChange={handleOpenChange} />
     </div>
   )
 }
