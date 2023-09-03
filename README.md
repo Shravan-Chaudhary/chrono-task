@@ -1,22 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [Remind Me]
 
-## Getting Started
+This is an open source e-commerce skateshop build with everything new in Next.js 13. It is bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-First, run the development server:
+## Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com)
+- **User Management:** [Clerk](https://clerk.com)
+- **ORM:** [Drizzle ORM](https://www.prisma.io/)
+- **UI Components:** [shadcn/ui](https://ui.shadcn.com)
+- **Form Validation:** [React Hook Form](https://www.react-hook-form.com/) & [Zod](https://zod.dev/)
+
+## Running Locally
+
+1. Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone https://github.com/Shravan-Chaudhary/remind-me.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies using npm
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Copy the `.env.example` to `.env` and update the variables.
+
+```bash
+cp .env.example .env
+```
+
+4. Start the development server
+
+```bash
+pnpm run dev
+```
+
+5. Push the database schema
+
+```bash
+npx prisma prisma db push
+```
 
 ## Learn More
 
