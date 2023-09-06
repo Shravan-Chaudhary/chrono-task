@@ -11,6 +11,14 @@ This is an open source e-commerce skateshop build with everything new in Next.js
 - **UI Components:** [shadcn/ui](https://ui.shadcn.com)
 - **Form Validation:** [React Hook Form](https://www.react-hook-form.com/) & [Zod](https://zod.dev/)
 
+## Features to be implemented
+
+- [x] Authentication with **Clerk**
+- [x] Theme Switching with **Shadcn/Themes**
+- [x] ORM using **Prisma**
+- [x] Validation with **Zod** & **React Hook Forms**
+- [x] Collection form using **Server Actions**
+
 ## Running Locally
 
 1. Clone the repository

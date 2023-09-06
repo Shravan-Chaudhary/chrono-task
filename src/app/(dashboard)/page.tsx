@@ -1,3 +1,4 @@
+import CollectionCard from '@/components/CollectionCard'
 import CreateCollectionButton from '@/components/CreateCollectionButton'
 import SadFace from '@/components/icons/SadFace'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
@@ -71,9 +72,13 @@ async function CollectionList() {
   }
 
   return (
-    <div>
-      Collections: {collections.length}
+    <>
       <CreateCollectionButton />
-    </div>
+      <div>
+        {collections.map((collection) => (
+          <CollectionCard key={collection.id} collection={collection} />
+        ))}
+      </div>
+    </>
   )
 }
