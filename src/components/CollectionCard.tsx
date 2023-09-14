@@ -24,7 +24,7 @@ const CollectionCard: React.FC<CollectionCardProps> = ({ collection }) => {
             CollectionColors[collection.color as CollectionColor],
           )}
         >
-          {collection.name}
+          <span className='text-white font-bold'>{collection.name}</span>
         </Button>
       </CollapsibleTrigger>
     </Collapsible>

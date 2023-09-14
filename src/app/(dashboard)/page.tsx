@@ -74,7 +74,7 @@ async function CollectionList() {
   return (
     <>
       <CreateCollectionButton />
-      <div>
+      <div className='flex flex-col gap-4 mt-6'>
         {collections.map((collection) => (
           <CollectionCard key={collection.id} collection={collection} />
         ))}

@@ -1,4 +1,4 @@
-# [Remind Me]
+# [Chrono Task]
 
 This is an open source e-commerce skateshop build with everything new in Next.js 13. It is bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
